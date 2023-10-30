@@ -36,7 +36,7 @@ export default function NewItem({ onAddItem }) {
 
     return (
         <main>
-            <div className='min-h-screen flex justify-center items-center'>
+            <div className='flex justify-center items-center'>
                 <form onSubmit = {handleSubmit}>
                     <label className='flex justify-center font-comic-sans text-pink-600 text-6xl'
                     >Name</label>

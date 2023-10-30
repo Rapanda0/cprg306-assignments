@@ -1,7 +1,6 @@
-import Image from 'next/image'
+
 import StudentInfo from './StudentInfo'
 import Link from 'next/link'
-import { Dai_Banna_SIL } from 'next/font/google'
 
 export default function Home() {
   return (
@@ -14,6 +13,7 @@ export default function Home() {
         <Link href='/week4'>Week 4</Link>
         <Link href='/week5'>Week 5</Link>
         <Link href='/week6'>Week 6</Link>
+        <Link href='/week7'>Week 7</Link>
       </div>
     </main>
   )
