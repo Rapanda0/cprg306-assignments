@@ -5,7 +5,7 @@ import itemsData from "./items.json";
 import React, { useState } from "react";
 import MealIdeas from "./meal-ideas";
 
-export default function Week8() {
+export default function Week7() {
        
     const [items, setItems] = useState(itemsData);
     const [selectedItemName, setSelectedItemName] = useState('');
