@@ -22,13 +22,10 @@ export default function Week10() {
 
   const handleAddItem = async (newItem) => {
     try {
-      // Call the addItem function to add the item to the shopping list
       const newItemId = await addItem(user.uid, newItem);
 
-      // Set the id of the new item
       newItem.id = newItemId;
 
-      // Set the state of items to include the new item
       setItems([...items, newItem]);
 
       console.log(`Item added successfully with ID: ${newItemId}`);
@@ -45,7 +42,6 @@ export default function Week10() {
   const loadItems = async () => {
     if (user) {
       try {
-        // Call the getItems function to get the shopping list items
         const items = await getItems(user.uid);
         setItems(items);
       } catch (error) {
@@ -54,10 +50,9 @@ export default function Week10() {
     }
   };
 
-  // useEffect hook to load items when the component mounts or when the user changes
   useEffect(() => {
     loadItems();
-  }, [user]); // Trigger useEffect when the user changes
+  }, [user]); 
 
   return (
     <div>
